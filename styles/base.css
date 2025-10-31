@@ -1,0 +1,268 @@
+/* ----------------GENERAL---------------- */
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* ----------------COLOR SCHEME---------------- */
+:root{
+    --color1: rgb(26, 43, 39); 
+    --color2: rgb(191, 255, 244);
+}
+
+/* ----------------SITE WIDE---------------- */
+
+*{
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+/* ----------------HEADER---------------- */
+
+header{
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 5px 5px 10px;
+    align-items: end;
+    border-bottom: 1px solid #ddd;
+    column-gap: 10px;
+}
+
+header img{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 3px;
+}
+
+header span{
+    font-size: 1.2rem;
+    color: var(--color1);
+}
+
+/* ----------------HAMBURGER NAV---------------- */
+
+.hamburger{
+    background-color: none;
+    border: none;
+    color: var(--color1);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::after{
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::after{
+    content: "\00d7";
+    font-size: 2rem;
+}
+
+/* ----------------NAV BAR---------------- */
+
+.navigation{
+    display: none;
+}
+
+.navigation.show{
+    display: block;
+}
+
+.navigation ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a{
+    display: block;
+    padding: .8rem 10px;
+    color: var(--color1);
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.navigation li.current{
+    background-color: #eee;
+}
+
+.navigation a:hover{
+    background-color: var(--color2);
+}
+
+/* ----------------MAIN---------------- */
+
+h1{
+    margin-left: 10px;
+    color: var(--color1);
+}
+
+/* ----------------ABOUT SECTION---------------- */
+
+.about{
+    display: block;
+    background-color: #eee;
+    margin: 10px;
+}
+
+.about h2{
+    display: block;
+    text-align: center;
+    color: white;
+    background-color: var(--color1);
+    padding: 4px;
+    font-size: 1.2rem;
+}
+
+.about p{
+    display: block;
+    text-align: left;
+    color: var(--color1);
+    padding: 10px 10px 30px 10px;
+}
+
+/* ----------------PHOTO SECTION---------------- */
+
+.photo{
+    display: block;
+    background-color: #eee;
+    margin: 10px;
+}
+
+.photo h2{
+    display: block;
+    text-align: center;
+    color: white;
+    background-color: var(--color1);
+    padding: 4px;
+    font-size: 1.2rem;
+}
+
+.photo img{
+    display: block;
+    max-width: 100%;
+    margin: auto;
+    padding: 10px 10px;
+    border-radius: 15px;
+}
+
+/* ----------------CERTIFICATES SECTION---------------- */
+
+.webCC{
+    display: block;
+    margin: 10px;
+}
+
+.webCC h2{
+    display: block;
+    text-align: center;
+    color: white;
+    background-color: var(--color1);
+    padding: 4px;
+    font-size: 1.2rem;
+}
+
+.webCC .certificates{
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem;
+    margin: 10px;
+}
+
+.webCC .certificates button{
+    width: 15rem;
+    padding: .8rem;
+    border-radius: 10px;
+    background-color: #ddd;
+    cursor: pointer;
+    font-size: .9rem;
+}
+
+.webCC .certificates button:hover{
+    background-color: var(--color2);
+}
+
+.webCC p{
+    display: block;
+    text-align: center;
+    margin: 15px;
+}
+
+/* ----------------COURSE LIST---------------- */
+
+.courseList{
+    display: block;
+    text-align: center;
+}
+
+.courseList ul{
+    list-style: none;
+}
+
+.courseList ul li{
+    background-color: #ddd;
+    padding: 5px;
+    margin: 7px 0;
+    border: 1px solid #ccc;
+}
+
+.courseList ul li.completed{
+    background-color: var(--color2);
+}
+
+.cseCourses{
+    display: none;
+}
+
+.cseCourses.show{
+    display: block;
+}
+
+.wddCourses{
+    display: none;
+}
+
+.wddCourses.show{
+    display: block;
+}
+
+
+/* ----------------FOOTER---------------- */
+
+footer{
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid #ccc;
+    border-radius: 22px;
+}
+
+.social img{
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover{
+    background-color: #ddd;
+}
+
+footer p{
+    display: block;
+    margin: 10px;
+}

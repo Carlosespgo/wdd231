@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My home page as a WDD231 student">
+    <meta name="author" content="Carlos Espinel">
+    <title>Home page</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <img src="images/dungeon.svg" alt="site logo" width="512" height="512">
+        <span>Carlos Site Title</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui neque ullam amet repellendus sunt officiis, culpa fuga. Non quas ullam doloremque impedit cum veniam aut necessitatibus consequuntur quo ipsa. Hic.</p>
+        </section>
+        <section class="photo">
+            <h2>Student Photo</h2>
+            <img src="images/studentPhoto.webp" alt="Student Photo">
+        </section>
+        <section class="webCC">
+            <h2>Web Certificate Courses</h2>
+            <section id="cer-btn" class="certificates">
+                <button id="all-btn">ALL</button>
+                <button id="cse-btn">CSE</button>
+                <button id="wdd-btn">WDD</button>
+            </section>
+            <section id="courseList" class="courseList">
+                <div id="cse" class="cseCourses">
+                    <ul>
+                        <li id="110">CSE 110</li>
+                        <li id="111">CSE 111</li>
+                        <li id="210">CSE 210</li>
+                    </ul>
+                </div>
+                <div id="wdd" class="wddCourses">
+                    <ul>
+                        <li id="130">WDD 130</li>
+                        <li id="131">WDD 131</li>
+                        <li id="231">WDD 231</li>
+                    </ul>
+                </div>
+            </section>
+            <p>The total credits for course listed above is <span id="credits"></span></p>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/Carlosespgo" target="_blank"><img src="images/github.svg" alt="github logo" width="16" height="16"></a>
+            <a href="www.linkedin.com/in/carlos-mario-espinel-gómez-063648338" target="_blank"><img src="images/linkedin.svg" alt="linkedin logo" width="16" height="16"></a>
+            <a href="https://www.facebook.com/carlos.espinel.720469" target="_blank"><img src="images/facebook.svg" alt="facebook logo" width="16" height="16"></a>
+        </div>
+        <p>© <span id="currentyear"></span> ~ Carlos Espinel ~ Colombia </p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
