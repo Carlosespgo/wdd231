@@ -1,0 +1,47 @@
+@media only screen and (min-width: 38rem){
+    /*---------------------HEADER---------------------*/
+
+    header {
+        display: flex;
+        align-items: center;
+        padding: 1.5rem 5rem 1rem 5rem;
+    }
+
+    header img{
+        width: 24px;
+        height: auto;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    /*---------------------NAV BAR---------------------*/
+
+    .navigation{
+        display: block;
+        margin-left: auto;
+    }
+
+    .navigation li.current{
+        text-decoration:underline;
+    }
+
+    .navigation ul{
+        display: flex;
+    }
+
+    .navigation a{
+        border: none;
+    }
+
+    /*---------------------MAIN---------------------*/
+    .list .link{
+        display: block;
+    }
+
+    .list .details{
+        display: none;
+    }
+    /*---------------------FOOTER---------------------*/
+}
