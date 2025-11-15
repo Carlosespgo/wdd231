@@ -14,7 +14,7 @@
 header{
     display: grid;
     grid-template-columns: 24px auto 44px;
-    padding: 5px 5px 10px 5px;
+    padding: 10px 10px 15px 10px;
     align-items: end;
     border-bottom: 1px solid #ddd;
     column-gap: 10px;
@@ -88,51 +88,111 @@ header span{
 
 /*---------------------MAIN---------------------*/
 
-.btns{
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    margin: 1rem;
+main{
+    padding-left: 10px;
 }
 
-.gridBtn, .listBtn{
-    border: 1px solid var(--color1);
+.Hero{
+    position: relative;
+    margin-left: -11px;
+}
+
+.Hero img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.Hero button{
+    position: absolute;
+    top: 85%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    padding: 1rem 2rem;
     border-radius: 10px;
-    color: var(--color1);
+    border: 1px solid var(--color1);
     cursor: pointer;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
 
-.gridBtn::after{
-    content: "\25A6";
-    font-size: 2rem;
-}
-
-.listBtn::after{
-    content: "\2261";
-    font-size: 2rem;
-}
-
-.gridBtn:hover, .listBtn:hover{
+.Hero button:hover{
     background-color: var(--color2);
 }
 
-/*---------------------GRID---------------------*/
-
-.grid {
-  display: grid;
-  grid-gap: 7px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  margin: 0 auto 1rem auto; 
-  max-width: 1500px; 
-  padding: 1rem;
+h1{
+    color: var(--color1);
 }
 
-.grid section {
-	padding: 1rem 5rem;
+/*---------------------EVENT SECTION---------------------*/
+
+.events, .weather, .WForecast, .spotlights{
+    display: block;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.events h2, .weather h2, .WForecast h2{
+    background-color: var(--color1);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+}
+
+.events div{
+    background-color: #ddd;
+    padding: 101px;
+}
+
+/*---------------------WEATHER SECTION---------------------*/
+
+.weather div{
+    display: grid;
+    grid-template-columns: 24px auto;
+    column-gap: 3rem;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #ddd;
+}
+
+.weather .weatherData{
+    display: block;
+    align-items: center;
+}
+
+.weather .weatherData ul{
+    list-style: none;
+    padding-left: 0%;
+    margin: 5px;
+}
+
+
+/*---------------------FORECAST---------------------*/
+
+.WForecast .day{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.WForecast h3, .WForecast p {
+  margin: 10px 0;
+}
+
+.WForecast .days{
+    background-color: #ddd;
+    padding-top: .8rem;
+    padding-bottom: 4rem;
+}
+
+/*---------------------SPOTLIGHTS---------------------*/
+
+.cards section{
+    padding: 1rem 5rem;
     margin: 0 auto 1rem auto;
-    max-width: 300px;
 	background-color: #fff;
+    border: 1px solid #ddd;
 	box-shadow: 0 10px 9px #777;
 	display: flex;
 	flex-direction: column;
@@ -141,67 +201,19 @@ header span{
     margin-bottom: 1rem;
 }
 
-.grid img {
-    margin: 1rem 5px;
+.cards img {
+    margin: 5px 5px;
 }
 
-.grid .compName{
-    display: none;
+.cards .compName{
+    display: block;
+    font-size: large;
+    font-weight: bold;
 }
 
-.grid p{
+.cards p{
     margin: 5px;
 }
-
-.grid .details{
-    display: none;
-}
-
-/*---------------------LIST---------------------*/
-
-.list {
-	display: flex;
-	flex-direction: column;
-    margin-bottom: 1rem;
-}
-
-.list section {
-  display: grid;
-  grid-template-columns: minmax(70px, 1fr) repeat(3, minmax(50px, 1fr));
-  margin: 0 1rem;
-  padding: 0.25rem 1rem 2rem 1rem;
-  align-items: center;
-}
-
-.list section > * {
-  margin: 0 1rem;
-}
-
-.list section img {
-  display: none;
-}
-
-.list section h3 {
-  font-size: 1rem;
-}
-
-.list section:nth-child(even) {
-  background-color: var(--color2);
-}
-
-
-.list section p {
-  font-size: 1rem;
-  margin: 1rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.list .link{
-    display: none;
-}
-
 
 /*---------------------FOOTER---------------------*/
 

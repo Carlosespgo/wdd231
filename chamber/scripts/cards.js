@@ -1,16 +1,4 @@
-const url = "./data/members.json";
-
-const cards = document.querySelector('#cards');
-
-async function getMembersData(jsonFile) {
-    const response = await fetch(jsonFile);
-    const data = await response.json();
-    displayCards(data.members);
-}
-
-getMembersData(url);
-
-const displayCards = (members) => {
+const displayCards = (members, elementId) => {
     members.forEach(member => {
         let card = document.createElement('section');
         let logo = document.createElement('img');
@@ -52,6 +40,8 @@ const displayCards = (members) => {
         card.appendChild(webSite);
         card.appendChild(detailsLink);
 
-        cards.appendChild(card);
+        elementId.appendChild(card);
     });
 };
+
+export { displayCards };

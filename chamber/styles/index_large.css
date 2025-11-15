@@ -1,0 +1,77 @@
+@media only screen and (min-width: 38rem){
+    /*---------------------HEADER---------------------*/
+
+    header {
+        display: flex;
+        align-items: center;
+        padding: 1.5rem 5rem 1rem 5rem;
+    }
+
+    header img{
+        width: 24px;
+        height: auto;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    /*---------------------NAV BAR---------------------*/
+
+    .navigation{
+        display: block;
+        margin-left: auto;
+    }
+
+    .navigation li.current{
+        text-decoration:underline;
+    }
+
+    .navigation ul{
+        display: flex;
+    }
+
+    .navigation a{
+        border: none;
+    }
+
+    /*---------------------MAIN---------------------*/
+    
+    main{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: minmax(100px, 2fr) repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .spotlights{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));;
+    }
+
+    /*---------------------FOOTER---------------------*/
+
+    footer{
+        display: flex;
+        justify-content: center;
+        gap: 8rem;
+    }
+
+    .datainfo{
+        display: block;
+        text-align: left;
+    }
+
+    .info{
+        display: block;
+        text-align: right;
+    }
+}

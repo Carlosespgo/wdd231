@@ -5,7 +5,7 @@
             "address": "106th Street 45 to 35",
             "phoneNumber":"(+57) 4876318244",
             "websiteURL": "https://starkIndustries.com/",
-            "image": "https://logos-world.net/wp-content/uploads/2023/08/Stark-Industries-Emblem.png",
+            "image": "/chamber/images/starkIndLogo.png",
             "memLevel": 3
         },
         {
@@ -13,7 +13,7 @@
             "address": "Corner of Callejón Diagon, Chapinero",
             "phoneNumber":"(+57) 3868811275",
             "websiteURL": "https://gringottsBank.com/",
-            "image": "https://tse2.mm.bing.net/th/id/OIP.zY1yzT3KJd8Gi-twF-3uHAHaKX?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3",
+            "image": "/chamber/images/gringottsLogo.webp",
             "memLevel": 3
         },
         {
@@ -21,7 +21,7 @@
             "address": "Wayne Tower, 7th Street",
             "phoneNumber":"(+57) 3328133828",
             "websiteURL": "https://wayneEnt.com/",
-            "image": "https://tse4.mm.bing.net/th/id/OIP.mD513L2pSEqq3EYSro0zyQAAAA?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3",
+            "image": "/chamber/images/wayneLogo.webp",
             "memLevel": 3
         },
         {
@@ -29,7 +29,7 @@
             "address": "144th Street 127 C 62",
             "phoneNumber":"(+57) 9997391934",
             "websiteURL": "https://BnL.com/",
-            "image": "https://tse3.mm.bing.net/th/id/OIP.0loCg4TkPq5YyqbwWtKAjwHaE8?cb=ucfimgc2&w=600&h=400&rs=1&pid=ImgDetMain&o=7&rm=3",
+            "image": "/chamber/images/BnLlogo.webp",
             "memLevel": 2
         },
         {
@@ -37,7 +37,7 @@
             "address": "51 128 A 39",
             "phoneNumber":"(+57) 5476997685",
             "websiteURL": "https://capsuleCorp.com/",
-            "image": "https://tse4.mm.bing.net/th/id/OIP.YPNEJBrsluPqCS3IM76oTAHaHa?cb=ucfimgc2&w=600&h=600&rs=1&pid=ImgDetMain&o=7&rm=3",
+            "image": "/chamber/images/capsuleLogo.webp",
             "memLevel": 2
         },
         {
@@ -45,7 +45,7 @@
             "address": "citadel 80th Street",
             "phoneNumber":"(+57) 4333895416",
             "websiteURL": "https://silphSA.com/",
-            "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/77bf3ba9-0aac-4452-be82-de536b5aab32/dezuczw-5ad7fb43-50a7-456e-b960-4a2e23077e9e.png/v1/fill/w_1280,h_852/silph_co_horizontal_by_biochao_dezuczw-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODUyIiwicGF0aCI6IlwvZlwvNzdiZjNiYTktMGFhYy00NDUyLWJlODItZGU1MzZiNWFhYjMyXC9kZXp1Y3p3LTVhZDdmYjQzLTUwYTctNDU2ZS1iOTYwLTRhMmUyMzA3N2U5ZS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.sMoOrjKxSerTkgZhbLYAvTExSeqRb1qJxCh-IWKNjk4",
+            "image": "/chamber/images/silphLogo.png",
             "memLevel": 2
         },
         {
@@ -53,7 +53,7 @@
             "address": "Diagonal 54 South 18b-61",
             "phoneNumber":"(+57) 1140857924",
             "websiteURL": "https://krustyKrab.com/",
-            "image": "https://m.media-amazon.com/images/I/61LLxBHfGSL.jpg",
+            "image": "/chamber/images/krustyLogo.jpg",
             "memLevel": 1
         },
         {
@@ -61,7 +61,7 @@
             "address": "Diagonal 55 to 18 52",
             "phoneNumber":"(+57) 8159831977",
             "websiteURL": "https://bubbaGump.com/",
-            "image": "https://tse2.mm.bing.net/th/id/OIP.pEAztzhOCcrFZ1TR3L-90gHaHN?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3",
+            "image": "/chamber/images/bubbaLogo.webp",
             "memLevel": 1
         }
     ]

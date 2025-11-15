@@ -1,20 +1,4 @@
-const navbutton = document.querySelector('#ham-btn');
-
-navbutton.addEventListener('click', () => {
-    navbutton.classList.toggle('show')
-    navBar.classList.toggle('show')
-});
-
-const navBar = document.querySelector('#nav-bar');
-
-const currentYear = document.querySelector("#currentyear");
-const today = new Date();
-
-currentYear.innerHTML = `${today.getFullYear()}`;
-
-const lastModified = document.querySelector("#lastModified");
-const lastModifiedDate = new Date(document.lastModified);
-lastModified.innerHTML = `${new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(lastModifiedDate)}`;
+import { displayCards } from "./cards.js";
 
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
@@ -29,3 +13,15 @@ listbutton.addEventListener("click", () => {
 	display.classList.remove("grid");
 	display.classList.add("list");
 });
+
+const url = "./data/members.json";
+
+const cards = document.querySelector('#cards');
+
+async function getMembersData(jsonFile) {
+    const response = await fetch(jsonFile);
+    const data = await response.json();
+    displayCards(data.members, cards);
+}
+
+getMembersData(url);
