@@ -201,14 +201,17 @@ h1{
     list-style: none;
 }
 
-.courseList ul li{
+.courseList ul button{
+    width: 15rem;
+    padding: .8rem;
+    border-radius: 10px;
     background-color: #ddd;
-    padding: 5px;
-    margin: 7px 0;
-    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: .9rem;
+    margin-bottom: 5px;
 }
 
-.courseList ul li.completed{
+.courseList ul button.completed{
     background-color: var(--color2);
 }
 
@@ -228,6 +231,46 @@ h1{
     display: block;
 }
 
+/* ----------------DIALOG---------------- */
+
+.dialog{
+    display: flex;
+    justify-content: center;
+}
+
+dialog {
+  border: 0;
+  border-radius: .25rem;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 3rem #777;
+  width: 90%;
+  max-width: 600px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+::backdrop {
+  background-color: rgb(0 0 0 / 50%);
+}
+
+dialog button {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  padding: .5rem 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+  cursor: pointer;
+}
+
+dialog h2{
+    background-color: var(--color1);
+    color: white;
+    padding: 4px;
+    max-width: 50%;
+}
 
 /* ----------------FOOTER---------------- */
 

@@ -56,21 +56,25 @@
             <section id="courseList" class="courseList">
                 <div id="cse" class="cseCourses">
                     <ul>
-                        <li id="110">CSE 110</li>
-                        <li id="111">CSE 111</li>
-                        <li id="210">CSE 210</li>
+                        <li><button id="110">CSE 110</button></li>
+                        <li><button id="111">CSE 111</button></li>
+                        <li><button id="210">CSE 210</button></li>
                     </ul>
                 </div>
                 <div id="wdd" class="wddCourses">
                     <ul>
-                        <li id="130">WDD 130</li>
-                        <li id="131">WDD 131</li>
-                        <li id="231">WDD 231</li>
+                        <li><button id="130">WDD 130</button></li>
+                        <li><button id="131">WDD 131</button></li>
+                        <li><button id="231">WDD 231</button></li>
                     </ul>
                 </div>
             </section>
             <p>The total credits for course listed above is <span id="credits"></span></p>
         </section>
+        <div class="dialog">
+            <dialog id="course-details" class="model"></dialog>
+        </div>
+        <dialog id="test"></dialog>
     </main>
     <footer>
         <div class="social">
@@ -83,3 +87,4 @@
     </footer>
 </body>
 </html>
+

@@ -92,21 +92,27 @@ function isComplete(courseElement) {
 
 const cse110 = document.getElementById("110");
 isComplete(cse110);
+const cse110Data = courses.find(course => course.number === 110);
 
 const cse111 = document.getElementById("111");
 isComplete(cse111);
+const cse111Data = courses.find(course => course.number === 111);
 
 const cse210 = document.getElementById("210");
 isComplete(cse210);
+const cse210Data = courses.find(course => course.number === 210);
 
 const wdd130 = document.getElementById("130");
 isComplete(wdd130);
+const wdd130Data = courses.find(course => course.number === 130);
 
 const wdd131 = document.getElementById("131");
 isComplete(wdd131);
+const wdd131Data = courses.find(course => course.number === 131);
 
 const wdd231 = document.getElementById("231");
 isComplete(wdd231);
+const wdd231Data = courses.find(course => course.number === 231);
 
 /*-----------------------BUTTON SELECTORS-----------------------*/
 
@@ -139,3 +145,46 @@ wddButton.addEventListener('click', () => {
     credits.innerHTML = `6`
 });
 
+const courseDetails = document.querySelector("#course-details");
+
+function displayCourseDetails(course) {
+  courseDetails.innerHTML = '';
+  courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+  courseDetails.showModal();
+  
+  closeModal.addEventListener("click", () => {
+    courseDetails.close();
+  });
+}
+
+cse110.addEventListener('click', () => {
+  displayCourseDetails(cse110Data);
+});
+
+cse111.addEventListener('click', () => {
+  displayCourseDetails(cse111Data);
+});
+
+cse210.addEventListener('click', () => {
+  displayCourseDetails(cse210Data);
+});
+
+wdd130.addEventListener('click', () => {
+  displayCourseDetails(wdd130Data);
+});
+
+wdd131.addEventListener('click', () => {
+  displayCourseDetails(wdd131Data);
+});
+
+wdd231.addEventListener('click', () => {
+  displayCourseDetails(wdd231Data);
+});

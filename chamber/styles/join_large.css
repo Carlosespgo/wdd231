@@ -1,0 +1,86 @@
+@media only screen and (min-width: 38rem){
+    /*---------------------HEADER---------------------*/
+
+    header {
+        display: flex;
+        align-items: center;
+        padding: 1.5rem 5rem 1rem 5rem;
+    }
+
+    header img{
+        width: 24px;
+        height: auto;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    /*---------------------NAV BAR---------------------*/
+
+    .navigation{
+        display: block;
+        margin-left: auto;
+    }
+
+    .navigation li.current{
+        text-decoration:underline;
+    }
+
+    .navigation ul{
+        display: flex;
+    }
+
+    .navigation a{
+        border: none;
+    }
+
+    /*---------------------MAIN---------------------*/
+    
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-bottom: 2rem;
+    }
+
+    h1{
+        margin-bottom: 5px;
+    }
+
+    .form1 {
+        max-width: 500px;
+        width: 100%;
+        grid-column: 1/2;
+        margin-left: 20px;
+    }
+
+    .memInfo {
+        max-width: 500px;
+        width: 100%;
+        grid-column: 2/3;
+    }
+
+
+
+    
+    /*---------------------FOOTER---------------------*/
+
+    footer{
+        display: flex;
+        justify-content: center;
+        gap: 8rem;
+    }
+
+    .datainfo{
+        display: block;
+        text-align: left;
+    }
+
+    .info{
+        display: block;
+        text-align: right;
+    }
+}
