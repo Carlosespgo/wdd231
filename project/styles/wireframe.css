@@ -1,0 +1,59 @@
+/*------------------------------GENERAL---------------------------------------*/
+*{
+    margin: 0%;
+}
+
+:root{
+    --color1: rgb(255, 49, 49);
+    --color2: rgb(46, 165, 46);
+    --color3: rgb(64, 64, 255);
+    --font1: cursive;
+    --font2: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*------------------------------HEADER---------------------------------------*/
+
+header{
+    background-color: var(--color3);
+    padding: 1rem;
+    color: white;
+}
+/*------------------------------MAIN---------------------------------------*/
+main{
+    padding-left: 1rem;
+}
+
+h1, h2{
+    font-family: var(--font1);
+    margin: 1rem;
+    padding: .5rem;
+}
+
+p, ul li{
+    font-family: var(--font2);
+    padding: .5rem;
+}
+
+.red{
+    background-color: var(--color1);
+    max-width: 200px;
+    border-radius: 5px;
+}
+
+.green{
+    background-color: var(--color2);
+    max-width: 200px;
+    border-radius: 5px;
+}
+
+img{
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
+/*------------------------------FOOTER---------------------------------------*/
+footer{
+    background-color: var(--color3);
+    color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+}
