@@ -44,4 +44,26 @@
         display: none;
     }
     /*---------------------FOOTER---------------------*/
+
+    footer{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .datainfo{
+        display: block;
+        text-align: left;
+    }
+
+    .info{
+        display: block;
+        text-align: right;
+    }
+}
+
+@media only screen and (min-width: 64rem){
+    footer{
+        gap: 8rem;
+    }
 }
