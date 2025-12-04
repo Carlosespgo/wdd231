@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The website keeps you informed about the teams, players, and results of the FIFA World Cup. You can check out everything you want and also make your own predictions about who will win. Just enjoy this page!">
+    <meta name="author" content="Carlos Espinel">
+    <title>FIFA WC-2026</title>
+
+    <link rel="icon" href="images/favicon.png">
+
+    <link rel="stylesheet" href="styles/base.css">
+
+    <script src="scripts/base.js" defer></script>
+    <script src="scripts/news.js" defer></script>
+
+    <meta property="og:title" content="Learn more about the fifa world cup 2026!">
+    <meta property="og:description" content="The website keeps you informed about the teams, players, and results of the FIFA World Cup. You can check out everything you want and also make your own predictions about who will win. Just enjoy this page!">
+    <meta property="og:image" content="images/favicon.png">
+    <meta property="og:url" content="https://carlosespgo.github.io/wdd231/Project/index.html">
+
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="images/dungeon.svg" alt="site logo" width="50" height="50">
+            <span>FIFA World Cup</span>
+        </div>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="#">Teams</a></li>
+                <li><a href="#">Prediction</a></li>
+            </ul>
+        </nav>
+        <button id="ham-btn" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    <main>
+        <div class="row">
+            <section class="info">
+                <h3>Cup Information</h3>
+                <p>The 2026 FIFA World Cup Mexico/United States/Canada will be the 23rd edition of the FIFA World Cup<br> and will take place from June 11 to July 19, 2026, in Canada, the United States, and Mexico.<br>
+                The triple venue was chosen on June 13, 2018, during the 68th FIFA Congress in Moscow, Russia. <br>This is the first time that the hosting rights have been awarded to three countries. <br>Mexico will be the first country to host three World Cups (after 1970 and 1986), 
+                <br>the United States will be the sixth to host at least two editions (after 1994), and Canada will host for the first time.
+                </p>
+            </section>
+            <section class="dates">
+                <h3>Important Dates</h3>
+                <ul>
+                    <li>June 11, 2026 - Tournament begins</li>
+                    <li>Thursday, June 11 - Saturday, June 27 (Group Stage fixtures)</li>
+                    <li>Sunday, June 28 - Friday, July 3 (Round of 32 fixtures)</li>
+                    <li>Saturday, July 4 - Tuesday, July 7 (Round of 16 fixtures)</li>
+                    <li>Thursday, July 9 - Saturday, July 11 (Quarter-final fixtures)</li>
+                    <li>Tuesday, July 14 and Wednesday, July 15 (Semi-final fixtures)</li>
+                    <li>Saturday, July 18 (bronze final)</li>
+                    <li>July 19, 2026 - Great Final (Tournament ends)</li>
+                </ul>
+            </section>
+        </div>
+        <div class="row">
+            <section class="stadiums">
+                <h3>Stadiums and Locations</h3>
+                <button type="button" id="back">◀</button>
+                <div class="slide active">
+                    <div class="country">
+                        <h5>Canada</h5>
+                        <ul>
+                            <li>Toronto</li>
+                            <li>Vancouver</li>
+                        </ul>
+                    </div>
+                    <div class="country">
+                        <h5>Mexico</h5>
+                        <ul>
+                            <li>Guadalajara</li>
+                            <li>Mexico City</li>
+                            <li>Monterrey</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="country">
+                        <h5>USA</h5>
+                        <ul>
+                            <li>Atlanta</li>
+                            <li>Boston</li>
+                            <li>Dallas</li>
+                            <li>Houston</li>
+                            <li>Kansas City</li>
+                            <li>Los Angeles</li>
+                            <li>Miami</li>
+                            <li>New York</li>
+                            <li>Philadelphia</li>
+                            <li>San Francisco</li>
+                            <li>Seattle</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide">
+                    <p>BC Place Vancouver</p>
+                    <img src="http://oct15.marlon-and-tobias.com/wp-content/uploads/2014/02/BC-Place-720x380.jpg" alt="BC Place Vancouver">
+                </div>
+                <div class="slide">
+                    <p>Estadio Azteca Mexico City</p>
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7MxXZGUaE_u3RaF_YyrfzjvEvFGUalwFTv4U5I6U-IgXCJJe96uAB0LVyLRISzCXJOnsu4yJTfgOYUlhVAvkFIhSCFQoo3zS_bphwI9-z5ca4e1B2H1e2_gs4QGhhxazG9F6sybGcxio/s400/Night+View.jpg" alt="Estadio Azteca Mexico City">
+                </div>
+                <div class="slide">
+                    <p>New York New Jersey Stadium</p>
+                    <img src="https://www.constructionspecifier.com/wp-content/uploads/2024/03/MetLife-Stadium_NYC-skyline-500x324.jpg" alt="New York New Jersey Stadium">
+                </div>
+                <button type="button" id="forward">▶</button>
+            </section>
+            <section class="news" id="news"></section>
+        </div>
+    </main>
+    <footer>
+        <div class="personal">
+            <p>WDD231 Class Project</p>
+            <p>Carlos Espinel</p>
+            <p>© <span id="currentyear"></span></p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+        <div class="social">
+            <a href="https://www.fifa.com" target="_blank"><img src="images/github.svg" alt="fifa website" width="16" height="16"></a>
+            <a href="https://twitter.com/FIFAcom" target="_blank"><img src="images/linkedin.svg" alt="twitter logo" width="16" height="16"></a>
+            <a href="https://www.instagram.com/fifaworldcup/" target="_blank"><img src="images/facebook.svg" alt="instagram logo" width="16" height="16"></a>
+        </div>
+    </footer>
+</body>
+</html>

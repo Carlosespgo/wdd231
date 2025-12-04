@@ -1,0 +1,438 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color1: rgb(255, 49, 49);
+    --color2: rgb(46, 165, 46);
+    --color3: rgb(64, 64, 255);
+    --color4: #ddd;
+    --font1: cursive;
+    --font2: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*-----------------------------HEADER-----------------------------*/
+
+header {
+    background-color: var(--color3);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 1000;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font2);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/*-----------------------------NAVIGATION-----------------------------*/
+.navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    font-family: var(--font2);
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+    color: var(--color1);
+}
+
+/*-----------------------------HAMBURGER-----------------------------*/
+.hamburger {
+    display: none;
+    width: 35px;
+    height: 28px;
+    background: none;
+    border: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/*-----------------------------INFO SECTION-----------------------------*/
+
+.info {
+    background: var(--color4);
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    font-family: var(--font2);
+    line-height: 1.6;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px black;
+}
+
+.info h3 {
+    margin-bottom: 1rem;
+    font-family: var(--font1);
+    font-size: 1.8rem;
+    color: var(--color2); 
+    text-align: center;
+    border-bottom: 2px solid var(--color2);
+    padding-bottom: 0.5rem;
+}
+
+.info p {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/*-----------------------------DATES SECTION-----------------------------*/
+
+.dates {
+    background: var(--color4);
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px black;
+    font-family: var(--font2);
+    line-height: 1.6;
+}
+
+.dates h3 {
+    margin-bottom: 1rem;
+    font-family: var(--font1);
+    font-size: 1.8rem;
+    color: var(--color3);
+    text-align: center;
+    border-bottom: 2px solid var(--color3);
+    padding-bottom: 0.5rem;
+}
+
+.dates ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dates li {
+    background: white;
+    margin: 0.5rem 0;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    transition: all 0.4s ease;
+    transform: translateX(-20px); 
+    opacity: 0.8;
+}
+
+.dates li:hover {
+    transform: translateX(0) scale(1.05);
+    opacity: 1;
+    background: black;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/*-----------------------------LOCATIONS SECTION-----------------------------*/
+
+.stadiums {
+    background: var(--color4);
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    height: 500px;           
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    font-family: var(--font2);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.stadiums h3 {
+    margin-bottom: 1rem;
+    font-family: var(--font1);
+    font-size: 1.8rem;
+    color: var(--color1);
+    border-bottom: 2px solid var(--color1);
+    padding-bottom: 0.5rem;
+}
+
+.stadiums ul li{
+    list-style: none;
+}
+
+.stadiums img{
+    max-width: 500px;
+    height: auto;
+}
+
+.slide {
+    display: none;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    overflow-y: auto;
+    animation: fadeIn 0.6s ease;
+}
+
+.slide.active {
+    display: flex; 
+}
+
+.country {
+    background: white;
+    border-radius: 8px;
+    width: 60%;         
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    margin: 1rem;
+    padding: 1rem 0;
+}
+
+.country ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+}
+
+.country li {
+    margin: 0.3rem 0;
+}
+
+.country:hover {
+    transform: scale(1.05);
+    background: #bbb;
+}
+
+.slide img {
+    width: 400px;  
+    height: 250px;  
+    object-fit: cover;  
+    border-radius: 10px;
+    margin: 1rem 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.stadiums button {
+    background: var(--color3);
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#back {
+    left: 10px;
+}
+
+#forward {
+    right: 10px;
+}
+
+.stadiums button:hover {
+    background: var(--color2);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/*-----------------------------NEWS SECTION-----------------------------*/
+
+.news {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.news-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.news-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.news-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.news-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.news-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+}
+.news-card a:hover {
+    text-decoration: underline;
+}
+
+/*-----------------------------MAIN-----------------------------*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    gap: 2rem;            
+    margin: 2rem auto;
+    max-width: 1200px; 
+}
+
+.row > section {
+    flex: 1 1 48%;     
+    box-sizing: border-box;
+}
+
+.row:first-child > .info {
+    flex: 1 1 35%;
+}
+
+.row:first-child > .dates {
+    flex: 1 1 60%; 
+}
+
+.row:last-child > .stadiums {
+    flex: 1 1 65%;  
+}
+
+.row:last-child > .news {
+    flex: 1 1 30%;  
+}
+
+/*-----------------------------FOOTER-----------------------------*/
+
+footer {
+    background: var(--color3); 
+    color: #eee;     
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer .personal p {
+    margin: 4px 0;
+    font-size: 0.9rem;
+}
+
+footer .social a {
+    margin-left: 15px;
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+footer .social img {
+    filter: invert(90%); 
+    width: 24px;
+    height: 24px;
+}
+
+footer .social a:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+/*-----------------------------RESPONSIVE-----------------------------*/
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    nav.navigation {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: var(--color3);
+        padding: 1rem 0;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    nav.navigation.open {
+        display: block;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        align-items: stretch; 
+        width: 100%;
+    }
+
+    .navigation ul li {
+        width: 100%;
+    }
+
+    .navigation a {
+        display: block; 
+        width: 100%; 
+        padding: 0.8rem;
+        border: 1px solid rgba(202, 249, 255, 0.692);
+        text-align: center;
+    }
+
+    .slide img {
+        max-width: 100%;
+    }
+
+    .country {
+        width: 95%;
+    }
+
+}
+
+
+
