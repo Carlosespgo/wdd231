@@ -1,0 +1,65 @@
+{
+    "players": [
+        {
+            "name": "Lionel Messi",
+            "team": "Argentina",
+            "cupsPlayed": 5,
+            "portrait": "./images/mes1.webp"
+        },
+        {
+            "name": "Cristiano Ronaldo",
+            "team": "Portugal",
+            "cupsPlayed": 5,
+            "portrait": "./images/bicho.webp"
+        },
+        {
+            "name": "Lamine Yamal",
+            "team": "Spain",
+            "cupsPlayed": 0,
+            "portrait": "./images/lamine.webp"
+        },
+        {
+            "name": "Eerling Haaland",
+            "team": "Norway",
+            "cupsPlayed": 0,
+            "portrait": "./images/haland.webp"
+        },
+        {
+            "name": "Kylian Mbappé",
+            "team": "France",
+            "cupsPlayed": 2,
+            "portrait": "./images/tortuga.webp"
+        },
+        {
+            "name": "Luka Modrić",
+            "team": "Croatia",
+            "cupsPlayed": 4,
+            "portrait": "./images/luka.webp"
+        },
+        {
+            "name": "Manuel Neuer",
+            "team": "Germany",
+            "cupsPlayed": 4,
+            "portrait": "./images/neuer.webp"
+        },
+        {
+            "name": "Jude Bellingham",
+            "team": "England",
+            "cupsPlayed": 1,
+            "portrait": "./images/jude.webp"
+        },
+        {
+            "name": "vinicius jr",
+            "team": "brazil",
+            "cupsPlayed": 0,
+            "portrait": "./images/vini.webp"
+        },
+        {
+            "name": "Luis Diaz",
+            "team": "colombia",
+            "cupsPlayed": 0,
+            "portrait": "./images/lucho.webp"
+        }
+
+    ]
+}

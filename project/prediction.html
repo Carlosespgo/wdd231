@@ -1,10 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Prueba Five Server</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get involved in the World Cup and participate by making your own predictions about how it will turn out, starting from the round of 32 and advancing to the champion!">
+    <meta name="author" content="Carlos Espinel">
+    <title>FIFA WC-2026</title>
+
+    <link rel="icon" href="images/favicon.png">
+
+    <link rel="stylesheet" href="styles/prediction.css">
+
+    <script src="scripts/base.js" defer></script>
+    <script src="scripts/prediction.js" defer></script>
+
+    <meta property="og:title" content="Learn more about the fifa world cup 2026!">
+    <meta property="og:description" content="Get involved in the World Cup and participate by making your own predictions about how it will turn out, starting from the round of 32 and advancing to the champion!">
+    <meta property="og:image" content="images/favicon.png">
+    <meta property="og:url" content="https://carlosespgo.github.io/wdd231/Project/index.html">
+
 </head>
 <body>
-  <h1>Hola Mundo ⚽</h1>
+    <header>
+        <div class="logo-area">
+            <img src="images/fifalogo.webp" alt="site logo" width="50" height="50">
+            <span>FIFA World Cup</span>
+        </div>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="https://carlosespgo.github.io/wdd231/project/index.html">Home</a></li>
+                <li><a href="https://carlosespgo.github.io/wdd231/project/teams.html">Teams</a></li>
+                <li class="current"><a href="https://carlosespgo.github.io/wdd231/project/prediction.html">Prediction</a></li>
+            </ul>
+        </nav>
+        <button id="ham-btn" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    <main>
+        <section class="predict" id="form">
+            <h2>Predict your World Cup</h2>
+            <form id="worldcup-form">
+                <div class="round" id="round-of-16">
+                    <h3>Round of 16</h3>
+                </div>
+                <div class="round" id="quarter-finals">
+                    <h3>Quarter Finals</h3>
+                </div>
+                <div class="round" id="semi-finals">
+                    <h3>Semi Finals</h3>
+                </div>
+                <div class="round" id="final">
+                    <h3>Final</h3>
+                </div>
+                <div class="round" id="champion">
+                    <h3>Champion</h3>
+                    <input type="text" name="champion" placeholder="Write the champion team">
+                </div>
+                <button type="submit">Make my prediction</button>
+            </form>
+        </section>
+        <dialog id="top3">
+            <h2>Your Prediction!</h2>
+            <div class="winner"></div>
+            <div class="top3"></div>
+            <button id="close-modal">Close</button>
+        </dialog>
+    </main>
+    <footer>
+        <div class="personal">
+            <p>WDD231 Class Project</p>
+            <p>Carlos Espinel</p>
+            <p>© <span id="currentyear"></span></p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+        <div class="social">
+            <a href="https://www.fifa.com" target="_blank"><img src="images/fifa.png" alt="fifa website" width="16" height="16"></a>
+            <a href="https://twitter.com/FIFAcom" target="_blank"><img src="images/twitter.png" alt="twitter logo" width="16" height="16"></a>
+            <a href="https://www.instagram.com/fifaworldcup/" target="_blank"><img src="images/instagram.png" alt="instagram logo" width="16" height="16"></a>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the teams that will be part of the most important global event in the world of sports, as well as their outstanding players, and experience the excitement of what is to come.">
+    <meta name="author" content="Carlos Espinel">
+    <title>FIFA WC-2026</title>
+
+    <link rel="icon" href="images/favicon.png">
+
+    <link rel="stylesheet" href="styles/teams.css">
+
+    <script src="scripts/teams.js" defer></script>
+    <script src="scripts/base.js" defer></script>
+
+    <meta property="og:title" content="Learn more about the fifa world cup 2026 Teams!">
+    <meta property="og:description" content="Discover the teams that will be part of the most important global event in the world of sports, as well as their outstanding players, and experience the excitement of what is to come.">
+    <meta property="og:image" content="images/favicon.png">
+    <meta property="og:url" content="https://carlosespgo.github.io/wdd231/Project/index.html">
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="images/fifalogo.webp" alt="site logo" width="50" height="50">
+            <span>FIFA World Cup</span>
+        </div>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="https://carlosespgo.github.io/wdd231/project/index.html">Home</a></li>
+                <li class="current"><a href="https://carlosespgo.github.io/wdd231/project/teams.html">Teams</a></li>
+                <li><a href="https://carlosespgo.github.io/wdd231/project/prediction.html">Prediction</a></li>
+            </ul>
+        </nav>
+        <button id="ham-btn" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    <main>
+        <h1>Qualified Teams</h1>
+        <div class="buttons">
+            <button class="red">AFC</button>
+            <button class="green">CAF</button>
+            <button class="blue">CONCACAF</button>
+            <button class="red">CONMEBOL</button>
+            <button class="green">OFC</button>
+            <button class="blue">UEFA</button>
+        </div>
+        <section class="Qteams">
+            <div id="afc">
+                <ul>
+                    <li>Australia</li>
+                    <li>Iran</li>
+                    <li>Japan</li>
+                    <li>Jordan</li>
+                    <li>Korea</li>
+                    <li>Qatar</li>
+                    <li>Saudi Arabia</li>
+                    <li>Uzbekistan</li>
+                </ul>
+            </div>
+            <div id="caf">
+                <ul>
+                    <li>Algeria</li>
+                    <li>Cape Verde</li>
+                    <li>Ivory Coast</li>
+                    <li>Egypt</li>
+                    <li>Ghana</li>
+                    <li>Morocco</li>
+                    <li>Senegal</li>
+                    <li>South Africa</li>
+                    <li>Tunisia</li>
+                </ul>
+            </div>
+            <div id="concacaf">
+                <ul>
+                    <li>Canada</li>
+                    <li>Mexico</li>
+                    <li>United States</li>
+                    <li>Curaçao</li>
+                    <li>Haiti</li>
+                    <li>Panama</li>
+                </ul>
+            </div>
+            <div id="conmebol">
+                <ul>
+                    <li>Argentina</li>
+                    <li>Brazil</li>
+                    <li>Colombia</li>
+                    <li>Ecuador</li>
+                    <li>Paraguay</li>
+                    <li>Uruguay</li>
+                </ul>
+            </div>
+            <div id="ofc">
+                <ul>
+                    <li>New Zealand</li>
+                </ul>
+            </div>
+            <div id="uefa">
+                <ul>
+                    <li>Austria</li>
+                    <li>Belgium</li>
+                    <li>Croatia</li>
+                    <li>England</li>
+                    <li>France</li>
+                    <li>Germany</li>
+                    <li>Netherlands</li>
+                    <li>Norway</li>
+                    <li>Portugal</li>
+                    <li>Scotland</li>
+                    <li>Spain</li>
+                    <li>Switzerland</li>
+                </ul>
+            </div>
+        </section>
+        <p class="info">There are teams that have not yet qualified and will be playing in the playoffs in 2026.</p>
+        <h1>Outstanding Players</h1>
+        <section class="players">
+            <button id="back">&#10094;</button>
+            <div class="players-container"></div>
+            <button id="forward">&#10095;</button>
+        </section>
+    </main>
+    <footer>
+        <div class="personal">
+            <p>WDD231 Class Project</p>
+            <p>Carlos Espinel</p>
+            <p>© <span id="currentyear"></span></p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+        <div class="social">
+            <a href="https://www.fifa.com" target="_blank"><img src="images/fifa.png" alt="fifa website" width="16" height="16"></a>
+            <a href="https://twitter.com/FIFAcom" target="_blank"><img src="images/twitter.png" alt="twitter logo" width="16" height="16"></a>
+            <a href="https://www.instagram.com/fifaworldcup/" target="_blank"><img src="images/instagram.png" alt="instagram logo" width="16" height="16"></a>
+        </div>
+    </footer>
+</body>
+</html>

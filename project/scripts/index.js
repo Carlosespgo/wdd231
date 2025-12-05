@@ -1,3 +1,27 @@
+const slides = document.querySelectorAll('.slide');
+const backBtn = document.getElementById('back');
+const forwardBtn = document.getElementById('forward');
+let currentIndex = 0;
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+    });
+}
+
+backBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(currentIndex);
+});
+
+forwardBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+});
+
+
+showSlide(currentIndex);
+
 const newsSection = document.querySelector('#news');
     const apiKey = '8bbeb4a063d54019859e60a5434fc658'; 
     const url = `https://newsapi.org/v2/everything?q=fútbol&language=es&sources=marca,espn,as&apiKey=${apiKey}`;
@@ -8,7 +32,6 @@ const newsSection = document.querySelector('#news');
             const articles = data.articles;
 
             if (articles.length > 0) {
-                // Elegimos una noticia aleatoria
                 const randomIndex = Math.floor(Math.random() * articles.length);
                 const article = articles[randomIndex];
 
